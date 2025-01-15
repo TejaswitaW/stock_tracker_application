@@ -118,7 +118,7 @@ class StockConsumer(AsyncWebsocketConsumer):
         await self.channel_layer.group_send(
             self.room_group_name,
             {
-                'type': 'send_update',
+                'type': 'send_stock_update',
                 'message': message
             }
         )

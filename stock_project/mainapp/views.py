@@ -7,7 +7,7 @@ from threading import Thread
 from asgiref.sync import sync_to_async
 
 def stockPicker(request):
-    # Extracting 50 stocks present inside this nifty
+    # Returns a list of tickers currently listed on the NIFTY50.
     stock_picker = tickers_nifty50()
     # print(stock_picker)
     # Render this stock_picker to front end, got all the stocks present inside the nifty.
